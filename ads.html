@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Earn by Watching Ads</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body style="text-align:center; font-family:Arial;">
+  <h2>Watch Ads & Earn</h2>
+  <button onclick="showAd()">Watch Ad</button>
+
+  <script>
+    function showAd() {
+      // Simulate ad display
+      setTimeout(() => {
+        alert("Ad completed. You earned reward!");
+        // You could use Telegram.WebApp.sendData() to notify your bot
+        Telegram.WebApp.sendData("reward_earned");
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
